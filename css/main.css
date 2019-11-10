@@ -1,0 +1,224 @@
+/*Спецификация*/
+
+*{
+	font-family: 'PT Sans', sans-serif;
+	
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h4,h5 {
+	font-weight: 700;
+}
+
+h3{
+	font-weight: 400;
+}
+
+.title{
+padding-top: 100px;
+text-align: center;
+padding-bottom: 70px;
+}
+
+.title__main{
+font-size: 32px;
+}
+
+.title__text{
+font-size: 20px;
+width: 740px;
+margin: 25px auto 0;
+}
+
+.yellow{
+	color: yellow;
+}
+
+.white{
+	color: white;
+}
+
+/* Первый экран */
+
+header {
+	background-color: #fcdb00;
+	color: black;
+	padding-top: 58px;
+	padding-bottom: 105px;
+}
+
+.menu{
+
+}
+
+.menu__item {
+margin:0 50px;
+}
+
+.menu__item a {
+	font-size: 22px;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+}
+
+.offer{
+	width: 400px;
+	margin-top: 117px;
+}
+
+.offer__title{
+	font-size: 32px;
+	margin-bottom: 6px;
+}
+
+.offer__intro{
+	font-size: 20px;
+}
+
+.offer__text{
+	font-size: 16px;
+	line-height: 1.2em;
+	margin-top: 20px;
+}
+
+.icons__item a {
+	display: block;
+	color: black;
+	font-size: 42px;
+	margin: 0 42px 0 0;
+}
+
+.icons__item a:hover {
+	text-decoration: none;
+	color: orange;
+	transition: all 0.3s ease;
+}
+
+.ipad{
+	display: block;
+	margin: 60px auto 0;
+}
+
+/*Второй экран*/
+.SectionSecond{
+	padding-bottom: 150px;
+}
+
+.feature{
+margin-bottom: 65px;
+}
+
+.feature__icon{
+font-size: 50px;
+margin-right: 37px;
+}
+
+/*третий экран*/
+
+.touch{
+	background-color: #010101;
+}
+
+.form{
+text-align: center;
+}
+
+.form__input{
+background: white;
+font-size: 16px;
+border-radius: 5px;
+width: 580px;
+padding: 15px 30px;
+border:0;
+margin-right: 20px;
+}
+
+.form__btn{
+background: #fcdb00;
+font-weight: 700;
+font-size: 16px;
+border-radius: 5px;
+width: 126px;
+padding: 15px 0;
+border: 0;
+}
+
+
+/*Четвертый экран*/
+
+.footer{
+background-color: #010101;
+}
+
+.credits{
+	font-size: 16px;
+	text-align: center;
+	padding: 50px 0 94px;
+	width: 184px;
+	margin: 0 auto;
+ }
+
+
+/*Медия запросы*/
+
+@media screen and (max-width: 992px){
+	.logo{
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	.offer{
+		text-align: center;
+		margin: 150px auto 50px;
+		width: 100%;
+	}
+
+	.icons{
+
+	}
+
+	.icons__item{
+		margin: 0 auto;
+	}
+
+	.icons__item:nth-child(3){
+margin-right: 0;
+	}
+
+	.form__btn{
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.form__input{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 764px){
+	.title__text{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 574px){
+.menu {
+	flex-direction: column;
+	text-align: center;
+}
+
+.menu__item{
+	margin-bottom: 10px;
+}
+.ipad{
+	display: block;
+	width: 100%;
+	padding:40px;
+}
+}
